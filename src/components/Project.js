@@ -19,7 +19,7 @@ export default function Project() {
     }, []);
     return (
         <main>
-            <img src={image} alt='Project BG' className='absolute w-full' />
+            <img src={image} alt='Project BG' className='absolute w-full h-full' />
             <section className='container mx-auto'>
                 <h1 className='text-5xl flex justify-center mb-2'>Projects</h1>
                 <h2 className='text-lg text-gray-800 flex justify-center mb-12'>
