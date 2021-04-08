@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import sanityClient from '../client.js'
-import image from '../bg-projects.svg'
+import image from '../bg-project.svg'
 
 export default function Project() {
     const [projectData, setProjectData] = useState(null)
