@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import sanityClient from '../client.js'
-import image from '../projects-bg.png'
 
 export default function Project() {
     const [projectData, setProjectData] = useState(null)
@@ -18,11 +17,10 @@ export default function Project() {
         .catch(console.error);
     }, []);
     return (
-        <main>
-            <img src={image} alt='Project BG' className='absolute object-cover w-full h-full' />
+        <main className='bg-blue-300 min-h-screen p-12'>
             <section className='container mx-auto'>
                 <h1 className='text-5xl flex justify-center mb-2'>Projects</h1>
-                <h2 className='text-lg text-gray-800 flex justify-center mb-12'>
+                <h2 className='text-lg text-gray-600 flex justify-center mb-12'>
                     Welcome to my projects page!
                 </h2>
                 <section className='grid grid-cols-2 gap-8'>
