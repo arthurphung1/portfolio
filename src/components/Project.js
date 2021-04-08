@@ -12,6 +12,7 @@ export default function Project() {
             description,
             projectType,
             link,
+            site,
             tags
         }`).then((data) => setProjectData(data))
         .catch(console.error);
@@ -56,7 +57,18 @@ export default function Project() {
                                     target='_blank' 
                                     className='text-red-500 font-bold hover:underline hover:text-red-400 text-lg'
                                 >
-                                    View The Project{" "}
+                                    GitHub Repo{" "}
+                                    <span role='img' aria-label='right pointer'>
+                                        ⏎
+                                    </span>
+                                </a>
+                                <a 
+                                    href={project.site} 
+                                    rel='noopener noreferrer' 
+                                    target='_blank' 
+                                    className='text-red-500 font-bold hover:underline hover:text-red-400 text-lg'
+                                >
+                                        Deployed Project{" "}
                                     <span role='img' aria-label='right pointer'>
                                         ⏎
                                     </span>
